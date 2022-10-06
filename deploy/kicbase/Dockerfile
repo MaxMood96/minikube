@@ -27,7 +27,7 @@ RUN cd ./cmd/auto-pause/ && go build
 
 # start from ubuntu 20.04, this image is reasonably small as a starting point
 # for a kubernetes node image, it doesn't contain much we don't need
-FROM ubuntu:focal-20210401
+FROM ubuntu:20.04
 
 ARG BUILDKIT_VERSION="v0.9.0"
 ARG FUSE_OVERLAYFS_VERSION="v1.7.1"
