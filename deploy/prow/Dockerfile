@@ -15,7 +15,7 @@
 # Includes tools used for kubernetes/minikube CI
 # NOTE: we attempt to avoid unnecessary tools and image layers while
 # supporting kubernetes builds, minikube installation, etc.
-FROM debian:bookworm
+FROM debian:12.11
 
 # arg that specifies the go version to install
 ARG GO_VERSION
